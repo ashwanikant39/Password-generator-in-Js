@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(45deg, #1c92d2, #f2fcfe);
+  background-repeat: no-repeat;
+  background-size: max(500px, 100vw);
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  height: 500px;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f2fcfe;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  /* justify-content: center; */
+
+  min-width: 450px;
+  /* border: 1px solid red; */
+
+  margin: 0px 30px;
+}
+.container h2 {
+  margin: 20px 0px;
+  font-size: 34px;
+  font-weight: 500;
+  font-style: normal;
+}
+.container .showPass {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  /* border: 2px solid blue; */
+}
+
+.showPass input {
+  flex: 1;
+  background-color: transparent;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 15px;
+}
+#copy {
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  padding: 5px;
+  transform: translateX(282%);
+  border-radius: 4px;
+  /* font-size: 20px; */
+  background-color: rgb(32, 84, 241);
+}
+#rangeBox {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin: 10px;
+}
+#rangeBox #range {
+  /* border: 2px solid blue; */
+  flex: 1;
+  cursor: pointer;
+}
+#rangeBox #rangeValue {
+  /* background-color: red; */
+  margin: 10px;
+  /* padding: 5px; */
+  font-size: 30px;
+  color: gray;
+}
+#range::before {
+  position: absolute;
+  content: "Password Length";
+  top: 5px;
+}
+#check-boxes {
+  display: flex;
+  /* flex: 1; */
+  border: 2px solid red;
+  width: 100%;
+  flex-direction: column;
+}

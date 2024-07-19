@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Password Generator</h2>
+      <div class="showPass">
+        <input type="text" id="showPassText" value="" />
+        <div id="copy">Copy</div>
+      </div>
+      <div id="rangeBox">
+        <input type="range" id="range" min="4" max="16" value="4" />
+        <span id="rangeValue">4</span>
+      </div>
+      <div id="check-boxes">
+        <label for=""> Lower Case(A-Z)<input type="checkbox" /> </label>
+        <label for=""> Upper Case(a-z)<input type="checkbox" /> </label>
+        <label for=""> Symbols Case(@-*)<input type="checkbox" /> </label>
+        <label for=""> Numbers(0-9)<input type="checkbox" /> </label>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
