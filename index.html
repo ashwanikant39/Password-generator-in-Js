@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Password Generator</title>
 
     <link rel="stylesheet" href="style.css" />
   </head>
@@ -18,12 +18,30 @@
         <input type="range" id="range" min="4" max="16" value="4" />
         <span id="rangeValue">4</span>
       </div>
+
       <div id="check-boxes">
-        <label for=""> Lower Case(A-Z)<input type="checkbox" /> </label>
-        <label for=""> Upper Case(a-z)<input type="checkbox" /> </label>
-        <label for=""> Symbols Case(@-*)<input type="checkbox" /> </label>
-        <label for=""> Numbers(0-9)<input type="checkbox" /> </label>
+        <label for="lcase" class="checkClass" id="checkBox-label">
+          Lower Case(A-Z)<input type="checkbox" id="lcase" checked />
+          <span id="slider"></span>
+          <span id="sliderBg"></span>
+        </label>
+        <label for="uCase" class="checkClass" id="checkBox-label">
+          Upper Case(a-z)<input type="checkbox" id="uCase" checked />
+          <span id="slider"></span>
+          <span id="sliderBg"></span>
+        </label>
+        <label for="symbol" class="checkClass" id="checkBox-label">
+          Symbols(@-*)<input type="checkbox" id="symbol" checked />
+          <span id="slider"></span>
+          <span id="sliderBg"></span>
+        </label>
+        <label for="number" class="checkClass" id="checkBox-label">
+          Numbers(0-9)<input type="checkbox" id="number" checked />
+          <span id="slider"></span>
+          <span id="sliderBg"></span>
+        </label>
       </div>
+      <div id="btn">Generate</div>
     </div>
     <script src="app.js"></script>
   </body>
