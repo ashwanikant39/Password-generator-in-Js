@@ -57,7 +57,7 @@ body {
   border-radius: 6px;
   font-size: 15px;
 }
-#copy {
+.copy {
   cursor: pointer;
   position: absolute;
   color: white;
@@ -65,10 +65,21 @@ body {
   transform: translateX(282%);
   border-radius: 4px;
   background-color: rgb(32, 84, 241);
+  /* background-color: rgb(32, 84, 241); */
 }
-#copy:active {
+.copied {
+  cursor: pointer;
+  position: absolute;
+  color: white;
+  padding: 5px;
+  transform: translateX(206%);
+  border-radius: 4px;
+  background-color: rgb(32, 84, 241);
+}
+.copy:active {
   background-color: rgb(89, 129, 248);
 }
+
 #rangeBox {
   width: 80%;
   display: flex;

@@ -1,5 +1,6 @@
 let genBtn = document.querySelector("#btn");
 let showPassText = document.querySelector("#showPassText");
+let copyText = document.querySelector("#copyId");
 
 let uCase = document.querySelector("#uCase");
 let lcase = document.querySelector("#lcase");
@@ -33,6 +34,9 @@ function GenPassword() {
   allChar += symbolCase.checked ? symChar : "";
   allChar += numberCase.checked ? numChar : "";
   // console.log(allChar);
+  if (allChar.length < 1) {
+    alert("Please select atleast 1 type");
+  }
   for (let i = 0; i < range.value; i++) {
     finalPass += allChar.charAt(Math.floor(Math.random() * allChar.length));
   }
@@ -40,3 +44,20 @@ function GenPassword() {
   return finalPass;
   // return 10;
 }
+
+copyText.addEventListener("click", () => {
+  // console.log(showPassText.value);
+  if (showPassText.value != "" || showPassText.value.length >= 1) {
+    navigator.clipboard.writeText(showPassText.value);
+    copyText.title = "Password Copied";
+    copyText.innerHTML = "Copied";
+    copyText.classList.add("copied");
+    copyText.classList.remove("copy");
+
+    setTimeout(() => {
+      copyText.innerHTML = "Copy";
+      copyText.classList.add("copy");
+      copyText.classList.remove("copied");
+    }, 2000);
+  }
+});
