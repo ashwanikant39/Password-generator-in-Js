@@ -64,8 +64,10 @@ body {
   padding: 5px;
   transform: translateX(282%);
   border-radius: 4px;
-  /* font-size: 20px; */
   background-color: rgb(32, 84, 241);
+}
+#copy:active {
+  background-color: rgb(89, 129, 248);
 }
 #rangeBox {
   width: 80%;
@@ -162,4 +164,12 @@ input[type="checkbox"]:checked + #slider {
   cursor: pointer;
   color: white;
   /* text-shadow: 2px 2px 2px rgb(62, 62, 62); */
+}
+#btn:hover {
+  background-color: rgb(66, 156, 246);
+}
+#btn:active {
+  /* color: red; */
+  transform: scale(102%);
+  animation: btn 1s ease;
 }
